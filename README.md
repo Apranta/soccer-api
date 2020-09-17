@@ -63,6 +63,8 @@ To run the project localy, make sure minimum requirements are fulfilled.
 
 ![api list](https://github.com/usernamesalah/soccer-api/blob/master/soccer.png?raw=true)
 
+> for access **PUT** and **DELETE** API you need to login with *default (admin:admin)*
+
 ## API Documentation
 
 We use [swag](https://github.com/swaggo/swag) to generate necearry Swagger files for API documentation. Everytime we run `make build`, the Swagger documentation will be updated.
