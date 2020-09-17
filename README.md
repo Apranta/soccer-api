@@ -10,14 +10,19 @@ To run the project localy, make sure minimum requirements are fulfilled.
 - PostgreSQL version 12
 - Docker (optional) -- see [here](https://docs.docker.com/get-docker/).
 
-### Running in Local Machine
+
+## How To Run this Project
+
+>Since the project already use Go Module, I recommend to put the source code in any folder but GOPATH.
+
+### Running Without Docker
 
 1. Make sure Go is installed as global command (first time only)
 
 2. Clone this project and go to the root project to install all dependencies (first time only)
     ```bash
     // clone the repository
-    > git clone git@github.com:Apranta/technical-test.git
+    > git clone https://github.com/usernamesalah/soccer-api.git
 
     // change directory to root project folder
     > cd soccer
@@ -39,10 +44,7 @@ To run the project localy, make sure minimum requirements are fulfilled.
 
     // now go to http://localhost:8080/ in your browser to check the app.
     ```
-5. If u wanna Run Unit Testing just run
-    ```bash
-        make test
-    ```
+
 ### Running from Docker Container
 
 1. Make sure Docker and Docker Compose is installed
@@ -50,6 +52,16 @@ To run the project localy, make sure minimum requirements are fulfilled.
 2. Run `docker-compose up`
 
 3. Build and run the app as described on the previous section.
+
+### Run the testing
+
+```bash
+    make test
+```
+
+## API LIST
+
+![api list](https://github.com/usernamesalah/soccer-api/tree/master/soccer.png)
 
 ## API Documentation
 
@@ -60,5 +72,17 @@ To configure your API documentation, please refer to [swag's declarative comment
 To access the documentation, please visit [API DOCUMENTATION](http://localhost:8080/docs/api/v1/index.html).
 
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Repository Content
+
+- [/api/v1](https://github.com/usernamesalah/soccer-api/tree/master/api/v1) contains controllers and API route registry
+- [/pkg](https://github.com/usernamesalah/soccer-api/tree/master/pkg)
+  - [/pkg/models](https://github.com/usernamesalah/soccer-api/tree/master/pkg/models) contains table models
+  - [/pkg/services](https://github.com/usernamesalah/soccer-api/tree/master/pkg/services) contains database transactions
+ 
+
+## Tools Used
+
+>In this project, I use some tools listed below
+
+- All libraries listed in [go.mod](https://github.com/usernamesalah/soccer-api/tree/master/go.mod)
+- ["github.com/vektra/mockery".](https://github.com/vektra/mockery) To Generate Mocks for testing needs.
