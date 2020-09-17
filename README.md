@@ -61,7 +61,7 @@ To run the project localy, make sure minimum requirements are fulfilled.
 
 ## API LIST
 
-![api list](https://github.com/usernamesalah/soccer-api/tree/master/soccer.png)
+![api list](https://github.com/usernamesalah/soccer-api/blob/master/soccer.png?raw=true)
 
 ## API Documentation
 
