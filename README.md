@@ -63,7 +63,7 @@ To run the project localy, make sure minimum requirements are fulfilled.
 
 ![api list](https://github.com/usernamesalah/soccer-api/blob/master/soccer.png?raw=true)
 
-> for access **PUT** and **DELETE** API you need to login with *default (admin:admin)*
+> for access **POST** , **PUT** and **DELETE** API you need to login with *default (admin:admin)*
 
 ## API Documentation
 
